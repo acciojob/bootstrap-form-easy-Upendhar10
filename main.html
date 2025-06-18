@@ -3,14 +3,63 @@
 <html>
 
 <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+	<div class="container border rounded my-3 p-2">
+		<h1 class="text-center mb-3">Internship Form</h1>
+		<form class="form w-100" >
+			<div class="d-flex gap-3 justify-between">
+			  <div class="mb-3">
+			    <label for="exampleInputFirstName" class="form-label">First Name</label>
+			    <input required aria-required="true" type="text" class="form-control" id="exampleInputFirstName" aria-describedby="firstNameHelp">
+			    <!-- <div id="firstNameHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+			  </div>
+			  <div class="mb-3">
+			    <label for="exampleInputLastName" class="form-label">Last Name</label>
+			    <input required aria-required="true" type="text" class="form-control" id="exampleInputLastName" aria-describedby="lastNameHelp">
+			    <!-- <div id="lastNameHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+			  </div>
+			  <div class="mb-3">
+			    <label for="exampleInputEmail1" class="form-label">Email address</label>
+			    <input required aria-required="true" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="xyz@abc.com">
+			    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+			  </div>
+			</div>
+			<div class="d-flex gap-3">
+				<div class="mb-3">
+				    <label for="exampleInputCollege" class="form-label">College</label>
+				    <input required aria-required="true" type="text" class="form-control" id="exampleInputCollege" aria-describedby="collegeHelp">
+				    <!-- <div id="firstNameHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+			  </div>
+				<div class="mb-3">
+					<label for="exampleInputGraduation" class="form-label">Graduation</label>
+					<select required aria-required="true" id="exampleInputGraduation" class="form-select" aria-label="Default select example">
+						<option selected disabled>choose....</option>
+						<option value="2022">2022</option>
+						<option value="2023">2023</option>
+						<option value="2024">2024</option>
+					</select>
+				</div>
+				<div class="mb-3">
+				    <label for="exampleInputRollNumber" class="form-label">Roll No.</label>
+				    <input required aria-required="true" type="text" class="form-control" id="exampleInputRollNumber" aria-describedby="rollNumberHelp">
+				    <!-- <div id="lastNameHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+			  </div>
+			</div>
+			<div class="mb-3 form-check">
+			    <input required aria-required="true" type="checkbox" class="form-check-input" id="exampleCheck1">
+			    <label class="form-check-label" for="exampleCheck1">Agree to terms and conditions</label>
+		   </div>
+		   <button type="submit" class="btn btn-primary">Submit form</button>
+		</form>
+	</div>
+	
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <script type="text/javascript" src="./script.js"> </script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
